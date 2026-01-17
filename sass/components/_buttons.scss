@@ -1,0 +1,31 @@
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn-skill {
+    background-color: #636e72;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s;
+
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+    &.ulti {
+        background: linear-gradient(45deg, #e17055, #d63031);
+    }
+    &.potion {
+        background: #00b894;
+        grid-column: span 2;
+    }
+}

@@ -1,0 +1,16 @@
+.battle-arena {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+    
+@media (max-width: 768) {
+    .battle-arena {
+        flex-direction: column;
+    }
+    
+}
+
+    
+        

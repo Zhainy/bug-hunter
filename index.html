@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bug Hunter Arena</title>
+</head>
+<body>
+    <main class="battle-arena">
+        <section class="fighter-card hero">
+            <div class="card-header">
+                <div class="avatar"> 👨‍💻 </div>
+                <div class="info">
+                    <h2> Trainee Dev </h2>
+                    <p> Level 10 </p>
+                    <div class="stats">
+                        <div class="bar-container">
+                            <div class="bar-fill hp" id="hero-hp-bar" style="width: 100%;"></div>
+                        </div>
+                        <p id="hero-hp-text">100/100 HP</p>
+                        <div class="bar-container">
+                           <div class="bar-fill mana" id="hero-mana-bar" style="width: 100%;"></div>
+                        </div>
+                        <p id="hero-mana-text">50/50 MP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls" id="btn-container">
+                <button class="btn-skill">
+                    ⌨️ <br> Refactor <br> <small> 0 MP</small>
+                </button>
+                <button class="btn-skill">
+                    🔥 <br> Hotfix <br> <small> 10 MP</small>
+                </button>
+                <button class="btn-skill ulti">
+                    🚀 <br> Deploy <br> <small> 20 MP</small>
+                </button>
+                <!-- Pueden agregar otro botón de ataque aqui -->
+
+                <button class="btn-skill potion">
+                    ☕ <br> Café <br> <small> Recuperar</small>
+                </button>
+            </div>
+        </section>
+
+    <aside class="battle-log">
+        <h3>Console.log()</h3>
+        <ul id="log-list" class="battle-log__list">
+            <li> > Init battle... </li>
+        </ul>
+        <h2 id="resultado-final"></h2>
+    </aside>
+    <section class="fighter-card boss"> 
+        <div class="card-header">
+            <div class="avatar">👾</div>
+            <div class="info">
+                <h2> Rey Bug</h2>
+                <div class="stats">
+                    <div class="bar-container">
+                        <div class="bar-fill hp" id="boss-hp-bar" style="width: 100%;"></div>
+                    </div>
+                    <p id="boss-hp-text"> 250 / 250 HP</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>   
+</body>
+</html>

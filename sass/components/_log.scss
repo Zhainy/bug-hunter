@@ -1,0 +1,19 @@
+.battle-log {
+    flex: 0.8;
+    background: $color-log;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: monospace;
+    color: $color-log-text;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    
+    &__list{
+        overflow-y: auto;
+        height: 100%;
+        margin: 0;
+        padding-left: 10px;
+        list-style: none;
+    }
+}

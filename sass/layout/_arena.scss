@@ -3,14 +3,11 @@
     gap: 20px;
     width: 90%;
     max-width: 1200px;
-}
     
-@media (max-width: 768) {
-    .battle-arena {
+    // Responsive: En celular se apilan
+    @media (max-width: 768px) {
         flex-direction: column;
     }
-    
 }
-
     
         

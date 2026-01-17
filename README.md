@@ -109,3 +109,15 @@ El enemigo debe sentirse "vivo".
 3. * Calcula un daño random y ataca al héroe.
 
 4. * Devuelve el turno y desbloquea los botones.
+
+## 📝 Notas Técnicas Importantes
+
+### 1. ⚠️ Actualización de Sintaxis Sass (`@import` vs `@use`)
+Se reemplazó la sintaxis obsoleta `@import` por el sistema de módulos moderno de Dart Sass para evitar advertencias (warnings) y asegurar compatibilidad futura:
+- Ahora se utiliza **`@use`** en lugar de `@import`.
+- **Nota clave:** Al usar módulos, las variables dejan de ser globales automáticamente. Por ello, en cada archivo parcial donde se necesiten variables, se incluyó la línea:
+  ```scss
+  @use '../abstracts/variables' as *;
+  ```
+### 2. 🐛 Corrección de Errores
+Se corrigieron errores de digitación en los nombres de las clases (typos) que estaban impidiendo que los estilos anidados se aplicaran correctamente en el diseño.

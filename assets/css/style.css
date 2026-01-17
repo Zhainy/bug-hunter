@@ -1,9 +1,8 @@
 body {
   background-color: #2d3436;
-  color: white;
+  color: #ffffff;
   font-family: sans-serif;
   margin: 0;
-  padding: 0;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,23 +15,23 @@ body {
   width: 90%;
   max-width: 1200px;
 }
-
-@media (max-width: 768) {
+@media (max-width: 768px) {
   .battle-arena {
     flex-direction: column;
   }
 }
-.figther-card {
+
+.fighter-card {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 12px;
   border: 2px solid grey;
 }
-.figther-card.hero {
+.fighter-card.hero {
   border-color: #0984e3;
 }
-.figther-card.boss {
+.fighter-card.boss {
   border-color: #d63031;
 }
 
@@ -40,6 +39,29 @@ body {
   font-size: 3.75rem;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.bar-container {
+  background: #555;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+.bar-fill.hp {
+  background-color: #00b894;
+}
+.bar-fill.mana {
+  background-color: #6c5ce7;
+}
+
+.boss .bar-fill.hp {
+  background-color: #d63031;
 }
 
 .controls {
@@ -72,29 +94,6 @@ body {
 .btn-skill.potion {
   background: #00b894;
   grid-column: span 2;
-}
-
-.bar-container {
-  background: #2d3436;
-  height: 10px;
-  border-radius: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-
-.bar-fill {
-  height: 100%;
-  transition: width 0.5s ease;
-}
-.bar-fill.hp {
-  background-color: #00b894;
-}
-.bar-fill.mana {
-  background-color: #6c5ce7;
-}
-
-.boss {
-  background-color: #d63031;
 }
 
 .battle-log {

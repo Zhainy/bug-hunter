@@ -1,8 +1,18 @@
-// Variables
-$color-bg: #2d3436;
-$color-hero: #0984e3;
-$color-boss: #d63031;
-$color-mana: #6c5ce7;
-$color-log: #000000;
-$color-log-text: #55efc4;
+// Paleta Principal
+$color-bg:       #2d3436;
+$color-log-bg:   #000000;
+$color-text:     #ffffff;
+
+// Roles
+$color-hero:     #0984e3; // Azul
+$color-boss:     #d63031; // Rojo
+
+// UI & Elementos
+$color-mana:     #6c5ce7; 
+$color-hp:       #00b894; 
+$color-terminal: #55efc4; 
+
+// Botones y Paneles
+$color-btn-bg:   #636e72; // Gris botones
+$color-card-bg:  rgba(255, 255, 255, 0.05);
 

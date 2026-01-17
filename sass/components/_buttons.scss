@@ -1,11 +1,12 @@
+@use '../abstracts/variables' as *;
 .controls {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; // 2 columnas iguales
     gap: 10px;
     margin-top: 20px;
 }
 .btn-skill {
-    background-color: #636e72;
+    background-color: $color-btn-bg;
     color: white;
     border: none;
     padding: 15px;
@@ -25,7 +26,7 @@
         background: linear-gradient(45deg, #e17055, #d63031);
     }
     &.potion {
-        background: #00b894;
-        grid-column: span 2;
+        background: $color-hp;
+        grid-column: span 2; // Ocupa ambas columnas
     }
 }

@@ -1,10 +1,11 @@
+@use '../abstracts/variables' as *;
 .battle-log {
     flex: 0.8;
-    background: $color-log;
+    background: $color-log-bg;
     padding: 15px;
     border-radius: 10px;
     font-family: monospace;
-    color: $color-log-text;
+    color: $color-terminal;
     display: flex;
     flex-direction: column;
     height: 300px;
